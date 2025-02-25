@@ -19,6 +19,7 @@ public class ASyncLoader : MonoBehaviour
         currentScreenUI.SetActive(false);
         loadingScreen.SetActive(true);
 
+
         StartCoroutine(LoadLevelASync(levelToLoad));
     }
 
