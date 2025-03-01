@@ -60,9 +60,12 @@
     <Analyzer Include="C:\Unity\2022.3.34f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\UseBonus.cs" />
-    <Compile Include="Assets\ASyncLoader.cs" />
-    <Compile Include="Assets\OpenLevel.cs" />
+    <Compile Include="Assets\Scripts\MoveCounter.cs" />
+    <Compile Include="Assets\Scripts\LevelSelect.cs" />
+    <Compile Include="Assets\Scripts\ScoreCounter.cs" />
+    <Compile Include="Assets\Scripts\OpenLevel.cs" />
+    <Compile Include="Assets\Scripts\ASyncLoader.cs" />
+    <Compile Include="Assets\Scripts\UseBonus.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
