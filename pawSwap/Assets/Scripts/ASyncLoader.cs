@@ -16,11 +16,14 @@ public class ASyncLoader : MonoBehaviour
 
     public int moves = 10;
     public int score = 1000;
+    public int level = 0;
 
-    public void setMovesAndScore(int m, int s)
+    public void setMovesScoreLevel(int m, int s, int l)
     {
         moves = m;
         score = s;
+        level = l;
+
     }
 
     public void LoadLevelBtn(string levelToLoad)
@@ -42,6 +45,9 @@ public class ASyncLoader : MonoBehaviour
 
             GameObject moveCounter = GameObject.Find("MoveCounter");
             moveCounter.GetComponent<MoveCounter>().StartLevelSetMoves(moves);
+
+            GameObject levelNumber = GameObject.Find("LevelNumber");
+            levelNumber.GetComponent<LevelCounter>().SetLevelNumber(level);
         };
 
         while (!loadOperation.isDone)

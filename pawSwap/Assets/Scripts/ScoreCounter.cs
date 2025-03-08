@@ -8,11 +8,13 @@ public class ScoreCounter : MonoBehaviour
     public TMP_Text scoreCounter;
     public GameObject WinScreen;
     private int score = 0;
-    private int scoreNeeded = 1000;
+    public int scoreNeeded = 1000;
 
     public void StartLevelSetScoreNeeded(int s)
     {
+        score = 0;
         scoreNeeded = s;
+        scoreCounter.text = score.ToString();
     }
 
     public void AddScore(int s)

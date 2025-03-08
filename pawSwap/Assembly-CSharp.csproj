@@ -62,8 +62,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MoveCounter.cs" />
     <Compile Include="Assets\Scripts\LevelSelect.cs" />
+    <Compile Include="Assets\Scripts\NextLevel.cs" />
     <Compile Include="Assets\Scripts\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\OpenLevel.cs" />
+    <Compile Include="Assets\Scripts\LevelCounter.cs" />
     <Compile Include="Assets\Scripts\ASyncLoader.cs" />
     <Compile Include="Assets\Scripts\UseBonus.cs" />
   </ItemGroup>
